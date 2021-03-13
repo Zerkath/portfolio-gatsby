@@ -7,7 +7,7 @@ const links = [
 
   {
     text: "Gatsby Portfolio",
-    url: "https://github.com/Zerkath/portfolio-gatsby",
+    url: "/",
     repo: "https://github.com/Zerkath/portfolio-gatsby",
     description: "Halusin oppia Gatsbyn perusteet ja luoda tehokkaan portfolion.",
     color: "#663299",
@@ -71,7 +71,6 @@ const IndexPage = () => {
         
         <p>Hei olen Joensuulainen kehittäjä opiskelemassa Karelian Ammattikorkeakoulussa. Opiskelen tietojenkäsittelytiedettä ja olen erikoistumassa verkkokehitykseen.</p>
         <p>Tykkään kehittää backendejä ja frontendejä. Yritän avartaa omaa osaamistani uusissa projekteissa.</p>
-        <p></p>
         <h2>Projekteja:</h2>
         <ul>
           {links.map(link => (
