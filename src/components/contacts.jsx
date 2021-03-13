@@ -1,6 +1,5 @@
 import React from "react"
-
-export default function Contacts() {
+export function Contacts() {
     return (
         <>
             <a href="https://gitlab.com/juha_airaksinen">gitlab</a><t> | </t>

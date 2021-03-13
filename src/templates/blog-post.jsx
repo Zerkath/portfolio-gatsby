@@ -1,19 +1,25 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import Contacts from "../components/contacts"
+import { Contacts } from "../components/contacts";
+import { Helmet } from "react-helmet"
+import "../styles.scss"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   return (
-    <Layout>
-      <title>{post.frontmatter.title}</title>
-      <div>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <a href="/">takaisin</a><t> | </t>
-        <Contacts/>
-      </div>
-    </Layout>
+    <>
+      <Helmet htmlAttributes={{lang: "fi"}}>
+        <title>{post.frontmatter.title}</title>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+      </Helmet>
+      <main>
+        <div>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <a href="/">Takaisin</a><t> | </t>
+          <Contacts/>
+        </div>
+      </main>
+    </>
   )
 }
 export const query = graphql`
