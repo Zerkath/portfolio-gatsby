@@ -15,6 +15,20 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 700,
+            }
+          }
+        ]
+      }
+    },
+    
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
@@ -29,6 +43,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
+      __key: "posts",
     },
   ],
 };
