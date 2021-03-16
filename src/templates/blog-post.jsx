@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { Contacts } from "../components/contacts";
 import { Helmet } from "react-helmet"
 import "../styles.scss"
@@ -15,8 +15,8 @@ export default function BlogPost({ data }) {
       <main>
         <div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <a href="/">Takaisin</a><t> | </t>
           <Contacts/>
+          <Link to="/">Takaisin</Link>
         </div>
       </main>
     </>

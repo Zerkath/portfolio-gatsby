@@ -9,8 +9,9 @@ Projektissa täytyi käyttää Bootstrap komponentteja mikä oli mielestäni tar
 
 Halusin luoda uuden version blogista paremilla työkaluilla ja käytänteillä myöhemmin.
 
+Käytin projektia inspiraationa tämän portfolion luonnissa.
 ## Kuva projektista
 ![Mobile](../images/desktop-portfolio.png)
-Käytin projektia inspiraationa tämän portfolion luonnissa.
+
 
 [Repository](https://gitlab.com/juha_airaksinen/portfolio-kurssi)

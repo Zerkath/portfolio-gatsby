@@ -1,5 +1,6 @@
 import React from "react"
 import { Contacts } from "../components/contacts";
+import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import "../styles.scss"
 // data
@@ -7,9 +8,9 @@ const links = [
 
   {
     text: "Gatsby Portfolio",
-    url: "/",
+    url: "/portfolio-gatsby",
     repo: "https://github.com/Zerkath/portfolio-gatsby",
-    description: "Halusin oppia Gatsbyn perusteet ja luoda tehokkaan portfolion.",
+    description: "Tarvitsin uuden portfolion ja opettelin samalla gatsbyä.",
     color: "#663299",
   },
   {
@@ -23,7 +24,7 @@ const links = [
     text: "Typescript ja WebSocket oppimisprojekti",
     url: "/socket-controller",
     repo: "https://github.com/Zerkath/cc-socket-controller",
-    description: "Vapaa-ajan projekti jossa tutuistuin TypeScriptiin ensimmäistä kertaa sekä perus WebSocketien toimintaan.",
+    description: "Vapaa-ajan projekti jossa tutuistuin TypeScriptiin ja WebSocketteihin",
     color: "#2F74C0",
   },
   {
@@ -38,23 +39,18 @@ const links = [
 const techs = [
   {
     text: "Java",
-    desc: "Kareliassa Java on olio-ohjelmoinnin oppimiskieli ja on täten ehkä kaikkein tutuin minulle tällä hetkellä.",
+    desc: "Kareliassa Java on olio-ohjelmoinnin opetuskieli ja tunnen Javan yksityiskohdat parhaiten. Myös vähän kokemusta Kotlinista.",
     color: "#EA8C10",
   },
   {
     text: "TypeScript ja JavaScript",
-    desc: "WebDev kurssilla opin JavaScriptin perusteet ja itsenäisesti tutuistuin TypeScriptiin.",
+    desc: "WebDev kurssilla opin JavaScriptin perusteet ja itsenäisesti tutuistuin TypeScriptiin. Käytän TypeScriptiä tällä hetkellä eniten.",
     color: "#2F74C0",
   },
   {
     text: "ReactJS",
     desc: "Olen tehnyt suurimman osan verkkoprojekteista Reactilla, tulevaisuudessa on suunnitelma oppia myös VueJS. Reactissa olen käyttänyt Bootstrappiä ja Ant Design komponentteja.",
     color: "#57D2F3",
-  },
-  {
-    text: "Python",
-    desc: "Vapaa-ajan työkalu ja oppimisväline. En ole vielä tehnyt suurempaa projektia Pythonia käyttäen, mutta olen hyödyntänyt sitä kaikenlaisiin pieniin tehtäviin.",
-    color: "#FFDB4D",
   },
 ]
 
@@ -67,22 +63,21 @@ const IndexPage = () => {
       </Helmet>
       <main>
         <meta name="description" content="Juha Airaksisen Portfolio sivusto"/>
-        <h1>Juha Airaksinen <Contacts/></h1>
-        
-        <p>Hei olen Joensuulainen kehittäjä opiskelemassa Karelian Ammattikorkeakoulussa. Opiskelen tietojenkäsittelytiedettä ja olen erikoistumassa verkkokehitykseen.</p>
-        <p>Tykkään kehittää backendejä ja frontendejä. Yritän avartaa omaa osaamistani uusissa projekteissa.</p>
+        <h1>Juha Airaksinen</h1>
+        <p>Hei olen Joensuulainen kehittäjä opiskelemassa Karelian Ammattikorkeakoulussa tietojenkäsittelytiedettä ja olen erikoistumassa verkkokehitykseen.</p>
+        {/* <p>Tykkään kehittää backendejä ja frontendejä. Yritän avartaa omaa osaamistani uusissa projekteissa.</p> */}
         <h2>Projekteja:</h2>
         <ul>
           {links.map(link => (
             <li key={link.url} style={{color: link.color}}>
               <span>
-                <a href={link.url}>{link.text}</a>
+                <Link to={link.url}>{link.text}</Link>
                 <p>{link.description} <a href={link.repo}>repo</a></p>
               </span>
             </li>
           ))}
         </ul>
-        <h2>Teknologioita:</h2>
+        <h2>Osaamisia:</h2>
         <ul>
           {techs.map(item => (
             <li key={item.text} style={{color: item.color}}>
@@ -93,7 +88,7 @@ const IndexPage = () => {
             </li> 
           ))}
         </ul>
-        <h2>Linkkejä:</h2>
+        <h2>Kontakti tietoja:</h2>
         <p>Ota yhteyttä sähköpostitse: juha.airaksinen1@gmail.com</p>
         <Contacts/>
       </main>
