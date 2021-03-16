@@ -16,7 +16,7 @@ export default function BlogPost({ data }) {
         <div>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <Contacts/>
-          <Link to="/">Takaisin</Link>
+          <h2><Link to="/">Takaisin</Link></h2>
         </div>
       </main>
     </>
