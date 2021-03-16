@@ -5,10 +5,12 @@ title: "TypeScript"
 
 Joulun alla oli vapaa-aika ja halusin oppia TypeScriptin perusteita ja vähän enemmän WebSocketeista.
 
-Samalla tuli käytettyä LUA scriptiä.
+Samalla tuli käytettyä LUA scriptiä, mielestäni LUA on tarpeettoman työläs ohjelmointi kieli ja toiminnalisuus on rajoitettu.
 
-Olin aikaisemmassa ryhmä projektissa käyttänyt SocketIO kirjastoa, mutten vielä WebSocketteja.
+Olin aikaisemmassa ryhmä projektissa käyttänyt SocketIO kirjastoa, 
+mutta en vielä WebSocketteja nämä eivät sinäänsä eroa toisistaan paljoa. SocketIO on hiukan helppokäyttöisempi.
 
-Projekti jäi kesken opintojen palatessa vauhtiin. Haluan tulevaisuudessa vielä luoda React pohjaisen käyttöliittymän.
+Projekti jäi kesken opintojen palatessa vauhtiin. 
+Haluan tulevaisuudessa vielä luoda React pohjaisen käyttöliittymän.
 
 [Repository](https://github.com/Zerkath/cc-socket-controller)

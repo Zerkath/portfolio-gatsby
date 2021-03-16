@@ -11,7 +11,7 @@ Halusin luoda uuden version blogista paremilla työkaluilla ja käytänteillä m
 
 Käytin projektia inspiraationa tämän portfolion luonnissa.
 ## Kuva projektista
-![Mobile](../images/desktop-portfolio.png)
+![portfolio](../images/desktop-portfolio.png)
 
 
 [Repository](https://gitlab.com/juha_airaksinen/portfolio-kurssi)
