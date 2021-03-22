@@ -70,7 +70,6 @@ const IndexPage = () => {
       <main>
         <meta name="description" content="Juha Airaksisen Portfolio sivusto"/>
         <h1>Juha Airaksinen</h1>
-        <Contacts/>
         <p>Hei olen Joensuulainen kehittäjä opiskelemassa Karelian Ammattikorkeakoulussa tietojenkäsittelytiedettä ja olen erikoistumassa verkkokehitykseen.</p>
         <p>Olen tällä hetkellä etsimässä töitä / työharjoittelupaikka kesäksi ja kesän jälkeen harjoittelupaikkaa koulun kurssia varten.</p>
         <h2>Projekteja:</h2>
