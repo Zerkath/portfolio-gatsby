@@ -1,11 +1,15 @@
 $base-color: #dcdce1;
 $backgroundColor: #333841;
+
+@font-face {
+    font-family: "sans-serif";
+    src: url(https://fonts.googleapis.com/css2?family=Quicksand&display=swap);
+}
+
 body {
     max-width: 800px;
     margin: 0 auto;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: 'Quicksand', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: $backgroundColor;
@@ -65,8 +69,8 @@ code {
 }
 
 .gatsby-resp-image-wrapper {
-    animation: fadeIn ease 2.5s;
-    -webkit-animation: fadeIn ease 2.5s;
+    animation: fadeIn ease 1.5s;
+    -webkit-animation: fadeIn ease 1.5s;
 }
 
 @keyframes fadeIn {
