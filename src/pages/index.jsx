@@ -10,13 +10,13 @@ const links = [
     text: "Gatsby Portfolio",
     url: "/portfolio-gatsby/",
     repo: "https://github.com/Zerkath/portfolio-gatsby",
-    description: "Tarvitsin uuden portfolion ja opettelin samalla gatsbyä.",
+    description: "Halusin tehdä uudemman version portfoliosta ja oppia samalla uusia työkaluja. Mielestäni gatsby oli sopiva tämän tyyppiselle sivustolle.",
     color: "#663299",
   },
   {
     text: "ReactJs & Bootstrap moninpeli App",
     url: "/react-app/",
-    description: "Agile kehitys projekti, jossa ryhmässä luotiin socketio käyttävä laivanupotus peli.",
+    description: "Koulun Agile kehitys projekti, jossa ryhmässä luotiin socketio käyttävä laivanupotus peli. Projektin aikana harjoittelimme Scrum käytänteitä.",
     color: "#CCFF04"
   },
   {
@@ -30,7 +30,7 @@ const links = [
     text: "Typescript ja WebSocket oppimisprojekti",
     url: "/socket-controller/",
     repo: "https://github.com/Zerkath/cc-socket-controller",
-    description: "Vapaa-ajan projekti jossa tutuistuin TypeScriptiin ja WebSocketteihin",
+    description: "Vapaa-ajan projekti jossa tutuistuin TypeScriptiin ja WebSocketteihin.",
     color: "#2F74C0",
   },
   {
@@ -70,19 +70,19 @@ const IndexPage = () => {
       <main>
         <meta name="description" content="Juha Airaksisen Portfolio sivusto"/>
         <h1>Juha Airaksinen</h1>
+        <Contacts/>
         <p>Hei olen Joensuulainen kehittäjä opiskelemassa Karelian Ammattikorkeakoulussa tietojenkäsittelytiedettä ja olen erikoistumassa verkkokehitykseen.</p>
-        <p>Olen tutkiva persoona ja opiskelen teknologioita vapaa-ajallani. Osaamis osiossa on asiat joissa koen olevani pätevä</p>
+        <p>Olen tällä hetkellä etsimässä töitä / työharjoittelupaikka kesäksi ja kesän jälkeen harjoittelupaikkaa koulun kurssia varten.</p>
         <h2>Projekteja:</h2>
         <ul>
           {links.map(link => (
             <li key={link.url} style={{color: link.color}}>
               <span>
                 <Link to={link.url}>{link.text}</Link>
-                <p>{link.description} 
-                  {link.repo !== undefined &&
-                    <a href={link.repo}>repo</a>
-                  }
-                </p>
+                <p>{link.description} </p>
+                {link.repo !== undefined &&
+                  <p><a href={link.repo}>Repository</a></p>
+                }
               </span>
             </li>
           ))}
@@ -92,7 +92,7 @@ const IndexPage = () => {
           {techs.map(item => (
             <li key={item.text} style={{color: item.color}}>
               <span>
-                <t>{item.text}</t>
+                <text>{item.text}</text>
                 <p>{item.desc}</p>
               </span>
             </li> 
