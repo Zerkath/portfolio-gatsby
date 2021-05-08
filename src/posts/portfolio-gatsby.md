@@ -1,15 +1,16 @@
 ---
 title: "Gatsby Portfolio"
 ---
-# Tämä sivusto projektina
-Aloin kehittämään sivustoa 13.03.2021 olin entuudestaan hiukan opiskellut kuinka gatsby toimii.
+# This portfolio as a project
+I started to develop this website on 13.03.2021. 
 
-Halusin hyödyntää markdownia sisällön täyttämiseen. Gatsby generoi markdown tiedostojen pohjalta uuden osion sivustolle.
+I had little experience of Gatsby overall, but I wanted to utilize markdown for posts.
+Also I had heard that Gatsby performs really well for the content style I was going for.
 
-Koin että gatsby olisi hyvä valinta portfolio / blogi tyyliselle sivustolle.
+Also GraphQl is a tech that I thought was interesting to try out. 
 
-Päivässä sain jo toimivan version jonka päälle pystyin lisäämään. Gatsby on todella kätevä ja helppokäyttöinen.
+It took me roughly one day to get a working version that I could add upon.
 
-Julkaisin sivuston herokuun github pipelinellä. Aikaisemmassa ryhmä projektissa olimme käyttäneet Herokua omatoimisesti.
+I used Github pipelines to deploy it to Heroku which has probably been the most easy deployment i've had so far.
 
 [Repository](https://github.com/Zerkath/portfolio-gatsby/)

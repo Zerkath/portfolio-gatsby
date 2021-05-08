@@ -1,46 +1,45 @@
 ---
 title: "React ja Bootstrap projekti"
 ---
-# Ensimmäinen verkkokehitys ryhmä projekti
+# First webdevelopment group project
 
-Agile kurssilla teimme ryhmässä laivan upotus pelin jota voi pelata seuraavassa osoitteessa:
+During a agile development course our group made a warship game that works on the browser available at the following address:
 
 [https://laivan-upotus.herokuapp.com/](https://laivan-upotus.herokuapp.com/)
 
-Projektin kehitys aikaa oli noin 6 viikkoa samalla opeteltiin scrum käytänteitä.
+We had roughly 6 weeks to develop the product, while also learning how agile works.
 
-Uusina asioita joita oppi projektin aikana socketit, redux ja deployment.
+Personally I learned how to better utilize React, and I learned about sockets and redux.
 
-## Näkymiä
-Sovelluksessa on kirjatumisnäyttö ja pelaaja saa itselleen väliaikaisen nimen joka näkyy toiselle pelaajalle.
+## Application views
+We had a name picking screen which allowed a user to have a display name. 
 
 ![kirjautuminen](../images/kirjautuminen.png)
 
-Kun käyttäjä on kirjautunut sisään hän voi luoda huoneen tai liittyä johonkin toiseen huoneeseen. 
-Huoneeseen sallitaan vain 2 pelaajaa samanaikaisesti.
+After picking a name the player could join a existing room, or they could create a new one.
+These rooms were made with sockets, the users aren't able to join full rooms and they also can't create already existing rooms.
 
 ![huoneet](../images/huoneet.png)
 
-Luonti näkymällä voidaan kirjoittaa vapaavalintainen huoneen nimi. 
-Huoneen nimi on varattu ja saman nimistä ei voi luoda ennenkuin nimi on vapautunut.
+The creation prompt allowed the user to pick a name for their room, and they could give the name to their friend to start a game.
 
 ![luonti](../images/luonti.png)
 
-Luonnin jälkeen pelaaja pääsee laivan asetteluun odotellessaan toista pelaajaa.
+After creation the user gets put into a room with 1 free slot.
 
 ![asettelu](../images/laivan-asettelu.png)
 
-Kun molemmat pelaajat ovat asettaneet laivat peli alkaa ja vuoro vaihtuu pelaajien välillä kunnes jompikumpi on voittanut.
+The game starts when both players have placed down their assigned ships.
 
 ![peli](../images/peli.png)
 
-Pelin päätyttyä pelaajat näkevät tuloksen tässä näkymässä.
+After the game ends the users with see the appropriate victory or defeat screens.
+The users are returned to the main menu after a game.
 
 ![tulos](../images/end-screen.png)
 
-Sovellus toimii myös mobiili laitteilla asettelu asettaa peli kentät päällekkäin tässä on mobiili laite kuva:
+The application was intended to also work on mobile to some extent.
 
 ![mobiili](../images/mobiili-app.jpeg)
 
-
-Repository ei ole tällä hetkellä avoin, joten en sitä tänne voi linkata. 
+I don't currently have the repository in a accesible website and cannot link it here
