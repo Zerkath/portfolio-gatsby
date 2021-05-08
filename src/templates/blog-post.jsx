@@ -8,7 +8,7 @@ export default function BlogPost({ data }) {
   const post = data.markdownRemark
   return (
     <>
-      <Helmet htmlAttributes={{lang: "fi"}}>
+      <Helmet htmlAttributes={{lang: "en"}}>
         <title>{post.frontmatter.title}</title>
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
       </Helmet>

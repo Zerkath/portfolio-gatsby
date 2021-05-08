@@ -10,34 +10,34 @@ const links = [
     text: "Gatsby Portfolio",
     url: "/portfolio-gatsby/",
     repo: "https://github.com/Zerkath/portfolio-gatsby",
-    description: "Halusin tehdä uudemman version portfoliosta ja oppia samalla uusia työkaluja. Mielestäni gatsby oli sopiva tämän tyyppiselle sivustolle.",
+    description: "I wanted to recreate my earlier portfolio website with different content and technologies. Also with more experience in web development",
     color: "#663299",
   },
   {
-    text: "ReactJs & Bootstrap moninpeli App",
+    text: "ReactJs & Bootstrap multiplayer App",
     url: "/react-app/",
-    description: "Koulun Agile kehitys projekti, jossa ryhmässä luotiin socketio käyttävä laivanupotus peli. Projektin aikana harjoittelimme Scrum käytänteitä.",
+    description: "Warship game created with React and SocketIO, first agile project.",
     color: "#CCFF04"
   },
   {
     text: "ReactJs & Bootstrap Portfolio",
     url: "/portfolio-bootstrap/",
     repo: "https://gitlab.com/juha_airaksinen/portfolio-kurssi",
-    description: "WebDev kurssin päätöstehtävä. Luotu käyttäen Bootstrap elementtejä.",
+    description: "Last assigment in web development course, a simple portfolio website made with React and Bootstrap.",
     color: "#57D2F3",
   },
   {
-    text: "Typescript ja WebSocket oppimisprojekti",
+    text: "Typescript ja WebSocket personal learning project",
     url: "/socket-controller/",
     repo: "https://github.com/Zerkath/cc-socket-controller",
-    description: "Vapaa-ajan projekti jossa tutuistuin TypeScriptiin ja WebSocketteihin.",
+    description: "Free-time project that I used to experiment with TypeScript and WebSockets",
     color: "#2F74C0",
   },
   {
-    text: "JavaFX tietokannan hallinta ohjelma",
+    text: "JavaFX user interface for SQL data entry",
     url: "/javafx-sql/",
     repo: "https://gitlab.com/juha_airaksinen/userinterfacesql",
-    description: "Ensimmäisen vuoden opiskeluiden projekti. Käyttöliittymä tietokannan hallintaan. Ohjelmoinnin perusteita.",
+    description: "First year user interface project, mostly basics of developing software.",
     color: "#EA8C10",
   },
 ]
@@ -45,17 +45,17 @@ const links = [
 const techs = [
   {
     text: "Java",
-    desc: "Kareliassa Java on olio-ohjelmoinnin opetuskieli ja tunnen Javan yksityiskohdat parhaiten. Myös vähän kokemusta Kotlinista.",
+    desc: "Java is the language used to teach basics of programming at Karelia and it fairly familiar to me. I also have a bit of experience in Kotlin",
     color: "#EA8C10",
   },
   {
-    text: "TypeScript ja JavaScript",
-    desc: "WebDev kurssilla opin JavaScriptin perusteet ja itsenäisesti tutuistuin TypeScriptiin. Käytän TypeScriptiä tällä hetkellä eniten.",
+    text: "TypeScript and JavaScript",
+    desc: "I learned JS in the webdev course, but wanted to learned TypeScript. Currently I use TS more than JS",
     color: "#2F74C0",
   },
   {
     text: "ReactJS",
-    desc: "Olen tehnyt suurimman osan verkkoprojekteista Reactilla, tulevaisuudessa on suunnitelma oppia myös VueJS. Reactissa olen käyttänyt Bootstrappiä ja Ant Design komponentteja.",
+    desc: "Most of my webdev projects are done with React, I have also used bootstrap and ant design with React.",
     color: "#57D2F3",
   },
 ]
@@ -63,16 +63,16 @@ const techs = [
 const IndexPage = () => {
   return (
     <>
-      <Helmet htmlAttributes={{lang: "fi"}}>
-        <title>Juhan Portfolio</title>
+      <Helmet htmlAttributes={{lang: "en"}}>
+        <title>Airaksinen Portfolio</title>
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
       </Helmet>
       <main>
-        <meta name="description" content="Juha Airaksisen Portfolio sivusto"/>
+        <meta name="description" content="Juha Airaksinen Portfolio"/>
         <h1>Juha Airaksinen</h1>
-        <p>Hei olen Joensuulainen kehittäjä opiskelemassa Karelian Ammattikorkeakoulussa tietojenkäsittelytiedettä ja olen erikoistumassa verkkokehitykseen.</p>
-        <p>Olen tällä hetkellä etsimässä töitä / työharjoittelupaikka kesäksi ja kesän jälkeen harjoittelupaikkaa koulun kurssia varten.</p>
-        <h2>Projekteja:</h2>
+        <p>I am a student at Karelia University of Applied Sciences.</p>
+        <p>Currently I am looking for a summer job or a internship at a tech company</p>
+        <h2>Some of my projects:</h2>
         <ul>
           {links.map(link => (
             <li key={link.url} style={{color: link.color}}>
@@ -86,7 +86,7 @@ const IndexPage = () => {
             </li>
           ))}
         </ul>
-        <h2>Osaamisia:</h2>
+        <h2>Skills:</h2>
         <ul>
           {techs.map(item => (
             <li key={item.text} style={{color: item.color}}>
@@ -97,8 +97,8 @@ const IndexPage = () => {
             </li> 
           ))}
         </ul>
-        <h2>Kontakti tietoja:</h2>
-        <p>Ota yhteyttä sähköpostitse: juha.airaksinen1@gmail.com</p>
+        <h2>Contact information:</h2>
+        <p>Email: juha.airaksinen1@gmail.com</p>
         <Contacts/>
       </main>
     </>
