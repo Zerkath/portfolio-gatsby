@@ -1,16 +1,16 @@
 ---
-title: "React ja Bootstrap projekti"
+title: "React and Bootstrap project"
 ---
-# React ja Bootstrap projekti
+# React and Bootstrap project
 
-Ensimmäinen React pohjainen projekti, jonka aikana opin paljon.
+This was my first React project using Bootstrap.
 
-Projektissa täytyi käyttää Bootstrap komponentteja mikä oli mielestäni tarpeetonta tarkoitukseen.
+Using Bootstrap was a requirement for the assigment, and I think it wasn't needed for the scale of this project.
 
-Halusin luoda uuden version blogista paremilla työkaluilla ja käytänteillä myöhemmin.
+The subject was to create a portfolio website based on the things learned during the course.
+I wanted to later recreate a portfolio website with little more experience and better examples of projects.
 
-Käytin projektia inspiraationa tämän portfolion luonnissa.
-## Kuva projektista
+## Picture of the project
 ![portfolio](../images/desktop-portfolio.png)
 
 

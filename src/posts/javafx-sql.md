@@ -1,17 +1,17 @@
 ---
-title: "JavaFX ja SQL"
+title: "JavaFX and SQL"
 ---
-# Ensimmäisen vuoden JavaFX ja SQL projekti
-Kyseessä oli ensimmäinen projekti jossa yhdistettiin opittuja teknologioita. 
-Myös ensimmäinen käyttöliittymä projekti.
+# First year course project for learning about JavaFX and SQL
+This was the first project where we combined learned technologies
+Also this was the first user interface project.
 
-Tässä tilanteessa JavaFX, Java ja MariaDB yhdiste.
+This project used Java, JavaFX and MariaDB
 
-## Kuva projektista
+## Picture of the project
 ![javafx-interface](../images/javafx.PNG)
 
-En luonut käyttöliittymälle muokattua ulkoasua vaan keskityin asetteluun ja toiminnalisuuteen.
+I didn't modify the default JavaFX visual style.
 
-![relaatiot](../images/relaatiot.png)
+![relations](../images/relaatiot.png)
 
 [Repository](https://gitlab.com/juha_airaksinen/userinterfacesql)
