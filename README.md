@@ -4,7 +4,7 @@ Portfolio in English, very simple Gatsby website.
 
 ## Start developing with
 ```
-npm install
-npm start
+yarn
+yarn start
 ```
 development opens on http://localhost:8000
