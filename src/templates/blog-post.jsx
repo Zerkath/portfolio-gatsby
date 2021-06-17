@@ -13,10 +13,10 @@ export default function BlogPost({ data }) {
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
       </Helmet>
       <main>
-        <div>
+        <div className="sub-section">
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <Contacts/>
-          <h2><Link to="/">Takaisin</Link></h2>
+          <h2><Link to="/">Back</Link></h2>
         </div>
       </main>
     </>

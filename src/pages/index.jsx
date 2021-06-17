@@ -1,9 +1,10 @@
 import React from "react"
 import { Contacts } from "../components/contacts";
+import { ProfileImage } from "../components/profile"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import "../styles.scss"
-// data
+
 const links = [
 
   {
@@ -16,7 +17,7 @@ const links = [
   {
     text: "ReactJs & Bootstrap multiplayer App",
     url: "/react-app/",
-    description: "Warship game created with React and SocketIO, first agile project.",
+    description: "Warship game created with React and SocketIO, first agile project. No public access to source code.",
     color: "#CCFF04"
   },
   {
@@ -45,17 +46,17 @@ const links = [
 const techs = [
   {
     text: "Java",
-    desc: "Java is the language used to teach basics of programming at Karelia and it fairly familiar to me. I also have a bit of experience in Kotlin",
+    desc: "The language I am most comfortable with",
     color: "#EA8C10",
   },
   {
     text: "TypeScript and JavaScript",
-    desc: "I learned JS in the webdev course, but wanted to learned TypeScript. Currently I use TS more than JS",
+    desc: "I have experience in both, but I prefer TypeScript",
     color: "#2F74C0",
   },
   {
     text: "ReactJS",
-    desc: "Most of my webdev projects are done with React, I have also used bootstrap and ant design with React.",
+    desc: "Most of my webdev projects are done with React",
     color: "#57D2F3",
   },
 ]
@@ -69,37 +70,55 @@ const IndexPage = () => {
       </Helmet>
       <main>
         <meta name="description" content="Juha Airaksinen Portfolio"/>
-        <h1>Juha Airaksinen</h1>
-        <p>I am a student at Karelia University of Applied Sciences.</p>
-        <p>Currently I am looking for a summer job or a internship at a tech company</p>
-        <h2>Some of my projects:</h2>
-        <ul>
-          {links.map(link => (
-            <li key={link.url} style={{color: link.color}}>
-              <span>
-                <Link to={link.url}>{link.text}</Link>
-                <p>{link.description} </p>
-                {link.repo !== undefined &&
-                  <p><a href={link.repo}>Repository</a></p>
-                }
-              </span>
-            </li>
-          ))}
-        </ul>
-        <h2>Skills:</h2>
-        <ul>
-          {techs.map(item => (
-            <li key={item.text} style={{color: item.color}}>
-              <span>
-                <text>{item.text}</text>
-                <p>{item.desc}</p>
-              </span>
-            </li> 
-          ))}
-        </ul>
-        <h2>Contact information:</h2>
-        <p>Email: juha.airaksinen1@gmail.com</p>
-        <Contacts/>
+
+        <div className="sub-section header">
+          <div>
+            <h1>Juha Airaksinen</h1>
+            <p>Hello! I am a Information Technology student at Karelia UAS</p>
+            <Contacts/>
+          </div>
+          <div>
+            <ProfileImage/>
+          </div>
+        </div>
+
+        <div className="sub-section">
+          <h2>Some of my projects:</h2>
+          <ul>
+            {links.map(link => (
+              <li key={link.url} style={{color: link.color}}>
+                <span>
+                  <Link to={link.url}>{link.text}</Link>
+                  <p>{link.description} </p>
+                  {link.repo !== undefined &&
+                    <p><a href={link.repo}>Repository</a></p>
+                  }
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="sub-section">
+          <h2>Skills:</h2>
+          <ul>
+            {techs.map(item => (
+              <li key={item.text} style={{color: item.color}}>
+                <span>
+                  <text>{item.text}</text>
+                  <p>{item.desc}</p>
+                </span>
+              </li> 
+            ))}
+          </ul>
+
+          
+        </div>
+        <div className="sub-section">
+          <h2>Contact information:</h2>
+          <p>Email: juha.airaksinen1@gmail.com</p>
+          <Contacts/>
+        </div>
       </main>
     </>
   )
