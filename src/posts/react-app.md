@@ -1,5 +1,5 @@
 ---
-title: "React ja Bootstrap projekti"
+title: "React and Bootstrap project"
 ---
 # First webdevelopment group project
 
@@ -41,5 +41,3 @@ The users are returned to the main menu after a game.
 The application was intended to also work on mobile to some extent.
 
 ![mobiili](../images/mobiili-app.jpeg)
-
-I don't currently have the repository in a accesible website and cannot link it here
