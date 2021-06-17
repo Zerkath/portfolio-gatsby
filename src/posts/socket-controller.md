@@ -1,16 +1,16 @@
 ---
 title: "TypeScript"
 ---
-# TypeScript ja WebSocketit oppimisprojekti
+# TypeScript and WebSocket freetime sandbox
 
-Joulun alla oli vapaa-aika ja halusin oppia TypeScriptin perusteita ja vähän enemmän WebSocketeista.
+I had some free-time before the holidays in winter and wanted to learn a little about TypeScript and WebSockets.
 
-Samalla tuli käytettyä LUA scriptiä, mielestäni LUA on tarpeettoman työläs ohjelmointi kieli ja toiminnalisuus on rajoitettu.
+I also got to try out Lua for the client. I think Lua has a couple of issues in terms of usability and the syntax isn't great.
 
-Olin aikaisemmassa ryhmä projektissa käyttänyt SocketIO kirjastoa, 
-mutta en vielä WebSocketteja nämä eivät sinäänsä eroa toisistaan paljoa. SocketIO on hiukan helppokäyttöisempi.
+I had already used SocketIO in a earlier project, but WebSockets were more basic, 
+SocketIO allows to send objects directly between clients. WebSockets encode to json.
 
-Projekti jäi kesken opintojen palatessa vauhtiin. 
-Haluan tulevaisuudessa vielä luoda React pohjaisen käyttöliittymän.
+Currently the project is abandoned due to a busy spring schedule. 
+I was going to create a user interface for displaying some controls and I will maybe get around to doing it at some point.
 
 [Repository](https://github.com/Zerkath/cc-socket-controller)

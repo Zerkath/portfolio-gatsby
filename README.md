@@ -1,6 +1,7 @@
 # My first gatsby project
 
-My personal portfolio in finnish
+Portfolio in English, very simple Gatsby website.
+
 ## Start developing with
 ```
 npm install
