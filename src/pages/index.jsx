@@ -8,11 +8,24 @@ import "../styles.scss"
 const links = [
 
   {
+    text: "Large scale group project",
+    url: "/large-group-project/",
+    description: "This was a large project done in a group in year 2. Frontends using ReactJS with ant design. With a backend consisting of Loopback and PostgreSQL.",
+    color: "#27183F",
+  },
+  {
     text: "Gatsby Portfolio",
     url: "/portfolio-gatsby/",
     repo: "https://github.com/Zerkath/portfolio-gatsby",
-    description: "I wanted to recreate my earlier portfolio website with different content and technologies. Also with more experience in web development",
+    description: "I wanted to recreate my earlier portfolio website with different content. With more experience in web development and using new technologies.",
     color: "#663299",
+  },
+  {
+    text: "Chess engine",
+    url: "/chess-engine/",
+    repo: "https://github.com/Zerkath/rosemary-chess",
+    description: "Group project for Artificial Intelligence and Automation course. Programmed in Java.",
+    color: "#7D79D5",
   },
   {
     text: "ReactJs & Bootstrap multiplayer App",
@@ -31,7 +44,7 @@ const links = [
     text: "Typescript ja WebSocket personal learning project",
     url: "/socket-controller/",
     repo: "https://github.com/Zerkath/cc-socket-controller",
-    description: "Free-time project that I used to experiment with TypeScript and WebSockets",
+    description: "For fun project that I used to experiment with TypeScript and WebSockets",
     color: "#2F74C0",
   },
   {

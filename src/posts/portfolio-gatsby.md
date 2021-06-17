@@ -15,4 +15,7 @@ I used Github pipelines to deploy it to Heroku which has probably been the most 
 
 I have been making tweaks to the website, when I have the time, still actively developing it.
 
+Version prior to 17.06.2021 (rework)
+![](../images/pre_17_06_21.png)
+
 [Repository](https://github.com/Zerkath/portfolio-gatsby/)
