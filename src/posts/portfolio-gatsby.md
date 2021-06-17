@@ -11,6 +11,8 @@ Also GraphQl is a tech that I thought was interesting to try out.
 
 It took me roughly one day to get a working version that I could add upon.
 
-I used Github pipelines to deploy it to Heroku which has probably been the most easy deployment i've had so far.
+I used Github pipelines to deploy it to Heroku which has probably been the most easy deployment I've had so far.
+
+I have been making tweaks to the website, when I have the time, still actively developing it.
 
 [Repository](https://github.com/Zerkath/portfolio-gatsby/)
