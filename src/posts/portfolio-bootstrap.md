@@ -10,7 +10,6 @@ Using Bootstrap was a requirement for the assigment, and I think it wasn't neede
 The subject was to create a portfolio website based on the things learned during the course.
 I wanted to later recreate a portfolio website with little more experience and better examples of projects.
 
-I liked the style I had for it and used it as inspiration for this portfolio.
 ## Picture of the project
 ![portfolio](../images/desktop-portfolio.png)
 

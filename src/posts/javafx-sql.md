@@ -12,6 +12,6 @@ This project used Java, JavaFX and MariaDB
 
 I didn't modify the default JavaFX visual style.
 
-![relaatiot](../images/relaatiot.png)
+![relations](../images/relaatiot.png)
 
 [Repository](https://gitlab.com/juha_airaksinen/userinterfacesql)
